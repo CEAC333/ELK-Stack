@@ -12,6 +12,15 @@ http://sundog-education.com/elasticsearch/
 ### Installing Ubuntu
 - https://www.ubuntu.com/download/server
 
+#### Once inside ubuntu with everything configured
+```
+sudo apt-get install default-jdk
+```
+```
+wget -q0 - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+```
+
+
 ### Installing Elasticsearch
 
 # Reference
