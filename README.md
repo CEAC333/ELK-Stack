@@ -12,6 +12,8 @@ http://sundog-education.com/elasticsearch/
 ### Installing Ubuntu
 - https://www.ubuntu.com/download/server
 
+### Installing Elasticsearch
+
 #### Once inside ubuntu with everything configured
 ```
 sudo apt-get install default-jdk
@@ -68,16 +70,37 @@ If everything is okay, you should see a response like this:
   "tagline" : "You know, for Search"
 }
 ```
+# Excercises
+```
+wget http://media.sundog-soft.com/es/shakes-mapping.json
+```
+```
+curl -XPUT 127.0.0.1:9200/shakespeare --data-binary @shakes-mapping.json
+```
+```
+wget http://media.sundog-soft.com/es/shakespeare.json
+```
+```
+curl -XPOST 127.0.0.1:9200/shakespeare/_bulk --data-binary @shakespeare.json
+```
+```
+curl -XGET '127.0.0.1:9200/shakespeare/_search?pretty' -d '
+{
+"query" : {
+"match_phrase" : {
+"text_entry" : "to be or not to be"
+}
+}
+}
+'
+```
 ```
 
 ```
 ```
 
 ```
-```
 
-```
-### Installing Elasticsearch
 
 # Reference
 https://www.udemy.com/elasticsearch-and-elastic-stack-in-depth-and-hands-on
