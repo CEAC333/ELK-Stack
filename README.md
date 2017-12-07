@@ -94,13 +94,6 @@ curl -XGET '127.0.0.1:9200/shakespeare/_search?pretty' -d '
 }
 '
 ```
-```
-
-```
-```
-
-```
-
 
 # Reference
 https://www.udemy.com/elasticsearch-and-elastic-stack-in-depth-and-hands-on
