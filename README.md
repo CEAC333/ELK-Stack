@@ -70,7 +70,7 @@ If everything is okay, you should see a response like this:
   "tagline" : "You know, for Search"
 }
 ```
-# Excercises
+# First Excercise
 ```
 wget http://media.sundog-soft.com/es/shakes-mapping.json
 ```
