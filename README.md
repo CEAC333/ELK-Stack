@@ -70,7 +70,8 @@ If everything is okay, you should see a response like this:
   "tagline" : "You know, for Search"
 }
 ```
-# First Excercise
+# Excercises
+### Hello World in Elasticsearch
 ```
 wget http://media.sundog-soft.com/es/shakes-mapping.json
 ```
@@ -94,6 +95,26 @@ curl -XGET '127.0.0.1:9200/shakespeare/_search?pretty' -d '
 }
 '
 ```
+
+### Connecting to your Cluster
+
+#### Install openssh-server
+Inside your Image of Ubuntu in VirtualBox
+```
+sudo apt-get install openssh-server
+```
+#### Connect to your "cluster"
+Outside, in your Mac Terminal
+```
+ssh -p 22 ---@127.0.0.1
+```
+```
+
+```
+```
+
+```
+
 
 # Reference
 https://www.udemy.com/elasticsearch-and-elastic-stack-in-depth-and-hands-on
